@@ -19,8 +19,10 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 
 
 # 网卡驱动
+cd ../
 git clone https://github.com/l-ff/rtl8188eu.git
 cd rtl8188eu
+cp -rf rtl8188eu_2305 ../openwrt/package/kernel
 cd ../openwrt/package/kernel
 mv rtl8188eu_2305 rtl8188eu
-cd ~
+cd ../../../
