@@ -16,3 +16,11 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+
+# 网卡驱动
+git clone https://github.com/l-ff/rtl8188eu.git
+cd rtl8188eu
+cd ../openwrt/package/kernel
+mv rtl8188eu_2305 rtl8188eu
+cd ~
